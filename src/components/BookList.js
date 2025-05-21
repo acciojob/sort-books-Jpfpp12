@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchBooks, setSortBy, setSortOrder } from './bookSlice.js';
+import './App.css';
 
 const BooksList = () => {
   const dispatch = useDispatch();
