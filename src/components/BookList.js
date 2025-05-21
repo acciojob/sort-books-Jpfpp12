@@ -33,12 +33,14 @@ const BooksList = () => {
   return (
     <div className="p-4">
       <div className="flex gap-4 mb-4">
-        <select onChange={handleSortByChange} value={sortBy}>
+        <label htmlFor="sortBy">Sort by:</label>
+        <select id="sortBy" onChange={handleSortByChange} value={sortBy}>
           <option value="title">Title</option>
           <option value="author">Author</option>
           <option value="publisher">Publisher</option>
         </select>
-        <select onChange={handleSortOrderChange} value={sortOrder}>
+        <label htmlFor="sortOrder">Order:</label>
+        <select id="sortOrder" onChange={handleSortOrderChange} value={sortOrder}>
           <option value="asc">Ascending</option>
           <option value="desc">Descending</option>
         </select>
