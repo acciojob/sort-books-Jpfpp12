@@ -1,13 +1,15 @@
 
-import React from "react";
-import './../styles/App.css';
+import React from 'react';
+import BooksList from './BooksList.js';
 
-const App = () => {
+function App() {
   return (
-    <div>
-        {/* Do not remove the main div */}
+    <div className="App">
+      {/* Do not remove the main div */}
+      <h1 className="text-2xl font-bold text-center my-6">NYT Bestsellers</h1>
+      <BooksList />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
