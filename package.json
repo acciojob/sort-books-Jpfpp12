@@ -13,8 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.0",
-    "axios": "^0.21.1",
-    "css-loader": "^4.3.0",
+    "axios": "^1.9.0",
+    "css-loader": "^7.1.2",
     "cypress": "^14.4.0",
     "jest-junit": "^11.1.0",
     "react": "^16.13.1",
@@ -36,10 +36,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@testing-library/react": "^11.0.4",
-    "babel-core": "^4.7.16",
+    "babel-core": "^6.26.3",
     "babel-loader": "^8.1.0",
     "babel-preset-env": "^0.0.0",
     "babel-preset-react": "^6.24.1",
@@ -52,5 +53,6 @@
     "webpack": "^5.99.9",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.15.1"
-  }
+  },
+  "port": 3000
 }
