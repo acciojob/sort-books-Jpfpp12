@@ -33,17 +33,21 @@ const BooksList = () => {
   return (
     <div className="p-4">
       <div className="flex gap-4 mb-4">
-        <label htmlFor="sortBy">Sort by:</label>
-        <select id="sortBy" onChange={handleSortByChange} value={sortBy}>
-          <option value="title">Title</option>
-          <option value="author">Author</option>
-          <option value="publisher">Publisher</option>
-        </select>
-        <label htmlFor="sortOrder">Order:</label>
-        <select id="sortOrder" onChange={handleSortOrderChange} value={sortOrder}>
-          <option value="asc">Ascending</option>
-          <option value="desc">Descending</option>
-        </select>
+        <div>
+          <label htmlFor="sortBy">Sort by:</label>
+          <select id="sortBy" onChange={handleSortByChange} value={sortBy}>
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+            <option value="publisher">Publisher</option>
+          </select>
+        </div>
+        <div>
+          <label htmlFor="sortOrder">Order:</label>
+          <select id="sortOrder" onChange={handleSortOrderChange} value={sortOrder}>
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+          </select>
+        </div>
       </div>
       <table className="table-auto w-full border">
         <thead>
